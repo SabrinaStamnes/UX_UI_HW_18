@@ -37,7 +37,10 @@ p{
     text-align: center;
 } 
 
+
 .jumboMargin{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1000px;
 }
 
@@ -49,14 +52,27 @@ width: 400px;
 
 }
 
-.w8 {
-    width: 80%
-}
+/* .w8 {
+    width: 80%;
+} */
 
 
 
 .center{
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+   margin: 10px; 
 }
+
+section{
+height: 600px;
+
+}
+
+@media only screen and (max-width: 600){
+    .jumboMargin{
+        display:grid;
+        grid-template-columns: 1fr;
+      margin-top: 1000px;
+    }
+}
+
+
